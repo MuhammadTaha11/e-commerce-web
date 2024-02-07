@@ -1,0 +1,109 @@
+.season_collection{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAF2F8;
+}
+
+.section_heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_heading h1{
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.all_categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    gap: 10px;
+    border-bottom: 1px solid black;
+    height: 25px;
+    transition: 800ms;
+    cursor: pointer;
+}
+
+.all_categories:hover{
+    color: crimson;
+    border-bottom: 1px solid crimson
+}
+
+.category_pic{
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    /* background-image: url(../assets/womens.webp); */
+    background-size:100%;
+    background-position: center;
+    /* transform: scale(2); */
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.category_pic:hover{
+    background-size: 108.5%;
+}
+
+.category_details{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.category_details h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.category_details p{
+    color: rgba(0, 0, 0, 0.737);
+}
+
+.all_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.three_buttons{
+    height: 50vh;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin: 0% auto;
+}
+
+.three_buttons button{
+    border: none;
+    padding: 0%;
+    font-size: xx-large;
+    font-weight: 500;
+    opacity: 0.8;
+    height: 60px;
+}
+
+.three_buttons button:hover{
+    opacity: 1;
+}
+
+.three_buttons button:focus{
+    outline: none;
+    /* border: none; */
+}

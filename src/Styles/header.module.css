@@ -1,0 +1,148 @@
+.top_bar {
+  height: 70px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom:solid 0.2px grey; */
+}
+
+.flag_language_selector {
+  /* width: ; */
+  display: flex;
+  gap: 30px;
+}
+
+.flag_selector,
+.language_selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.flag_image {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background: url(../assets/UsaFlag.svg);
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+
+.top_logo {
+  width: 136px;
+  height: 21px;
+  background-image: url(../assets/logo-black2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
+.icons_group {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.icon:hover {
+  color: rgb(205, 32, 31);
+  cursor: pointer;
+}
+
+.line_div{
+    border-top: 0.1px solid lightgray;
+}
+
+.nav_list{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.nav_list li{
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.nav_list li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav_list li:hover::after{
+  /* text-decoration: underline; */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Header */
+
+.header{
+  display: flex;
+}
+
+.header_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  background-color: #eef1e0;
+  padding-left: 40px;
+}
+
+.header_heading{
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.header_text{
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.header_img{
+  background-image: url(../assets/header-img.webp);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.header_button{
+  width: 215px;
+  margin-top: 40px;
+  height: 55px;
+  background-image: linear-gradient(100deg ,white , white , rgba(0, 0, 0, 0.245) ,white , white , white);
+  background-position: left;
+  background-size: 500%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  gap: 10px;
+  transition: 1.6s;
+}
+
+.header_button:hover{
+  background-position: right;
+}
